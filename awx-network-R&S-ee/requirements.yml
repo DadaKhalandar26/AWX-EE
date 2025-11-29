@@ -4,7 +4,6 @@ collections:
   - name: community.network
   - name: cisco.ios
   - name: cisco.iosxr
-  - name: junipernetworks.junos
+  - name: cisco.nxos
   - name: arista.eos
-  - name: ntc-templates
-  # add any other collections your playbooks use
+  - name: junipernetworks.junos

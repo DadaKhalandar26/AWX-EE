@@ -1,0 +1,21 @@
+version: 1
+dependencies:
+  # system packages (via bindep)
+  - bindep.txt
+
+  # python packages to install via pip
+  - requirements.txt
+
+  # ansible collections to include
+  - requirements.yml
+
+additional_build_files:
+  # extra files to copy into the image (optional)
+  - files/ansible.cfg
+  - files/ssh_config
+
+manifest:
+  # image name (used by ansible-builder when creating the image)
+  name: myregistry/awx-network-ee:1.0.0
+  # ansible-core / runner versions can be controlled via base_image selection
+  # (ansible-builder will create a Containerfile based on this)
